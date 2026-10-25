@@ -1,0 +1,186 @@
+{
+  "tmax": {
+    "pair": "tmax",
+    "attempts": 253,
+    "deadline_minutes": 132.80938856601716,
+    "caps": {
+      "concurrent_trials": 16,
+      "cpu_whole_trial": 27,
+      "memory_whole_trial_gib": 66,
+      "gpu": 8
+    },
+    "baseline": {
+      "minutes": 132.80938856601716,
+      "cpu": {
+        "peak": 27.0,
+        "hours": 37.60300200323264
+      },
+      "memory": {
+        "peak": 66.0,
+        "hours": 98.26633189784155
+      },
+      "gpu": {
+        "peak": 8,
+        "hours": 17.707918475468954
+      },
+      "gpu_timing": {
+        "pending_union_minutes": 111.71746510267258,
+        "no_pending_minutes": 21.091923463344575,
+        "gpu_hours_reclaimable_at_zero_switch_cost_on_this_schedule": 2.8122564617792767,
+        "fraction_reclaimable_on_this_schedule": 0.15881349723148647,
+        "peak_pending_requests": 16.0
+      },
+      "storage": {
+        "peak": null,
+        "hours": null
+      }
+    },
+    "lower_bounds": {
+      "cpu": 19.87857717388206,
+      "memory": 54.06413663360808,
+      "gpu": 8.070645874904262,
+      "storage": null
+    },
+    "candidates": 818,
+    "feasible_candidates": 764,
+    "search_seed": 20261020,
+    "elapsed_seconds": 1.310080172988819,
+    "best": {
+      "cpu": {
+        "resource_hours": 19.87857717388206,
+        "minutes": 110.33002907037735,
+        "saving_percent": 47.13566440207846,
+        "lower_bound": 19.87857717388206,
+        "above_lower_bound_percent": 0.0,
+        "optimality": "proven within fixed-duration phase-reclaim model",
+        "label": "time local search 158",
+        "candidate": 497
+      },
+      "memory": {
+        "resource_hours": 54.06413663360808,
+        "minutes": 110.33002907037735,
+        "saving_percent": 44.98203444714556,
+        "lower_bound": 54.06413663360808,
+        "above_lower_bound_percent": 0.0,
+        "optimality": "proven within fixed-duration phase-reclaim model",
+        "label": "time local search 158",
+        "candidate": 497
+      },
+      "gpu": {
+        "resource_hours": 14.361116146511502,
+        "minutes": 129.2053326209386,
+        "saving_percent": 18.90003239846528,
+        "lower_bound": 8.070645874904262,
+        "above_lower_bound_percent": 77.942588103977,
+        "optimality": "best feasible found; not proven global minimum",
+        "label": "gpu local search 101",
+        "candidate": 680
+      }
+    },
+    "best_time": {
+      "minutes": 110.33002907037735,
+      "cpu": 19.87857717388206,
+      "memory": 54.06413663360808,
+      "gpu": 14.668155532942878,
+      "storage": null
+    }
+  },
+  "deepswe": {
+    "pair": "deepswe",
+    "attempts": 1998,
+    "deadline_minutes": 1352.9338849981625,
+    "caps": {
+      "concurrent_trials": 32,
+      "cpu_whole_trial": 64,
+      "memory_whole_trial_gib": 256,
+      "gpu": 8
+    },
+    "baseline": {
+      "minutes": 1352.9338849981625,
+      "cpu": {
+        "peak": 64.0,
+        "hours": 1397.8638320914904
+      },
+      "memory": {
+        "peak": 256.0,
+        "hours": 5591.455328365962
+      },
+      "gpu": {
+        "peak": 8,
+        "hours": 180.39118466642168
+      },
+      "storage": {
+        "peak": 153.84741444699466,
+        "hours": 1968.0225560641486
+      },
+      "gpu_timing": {
+        "busy_union_minutes": 1352.2764827807744,
+        "no_pending_minutes": 0.6574022173881531,
+        "zero_cost_reclaim_gpu_hours": 0.08765362898508708,
+        "no_pending_percent": 0.04859086054963033,
+        "peak_pending": 32.0
+      },
+      "concurrency": 32.0
+    },
+    "lower_bounds": {
+      "cpu": 148.03930571344165,
+      "memory": 592.1572228537666,
+      "gpu": 156.2280657972561,
+      "storage": 104.408624875288
+    },
+    "candidates": 1418,
+    "feasible_candidates": 1219,
+    "search_seed": 20261020,
+    "elapsed_seconds": 74.80298813899572,
+    "best": {
+      "cpu": {
+        "resource_hours": 148.03930571344165,
+        "minutes": 1311.462227276961,
+        "saving_percent": 89.40960469004018,
+        "lower_bound": 148.03930571344165,
+        "above_lower_bound_percent": 0.0,
+        "optimality": "proven within fixed-duration phase-reclaim model",
+        "label": "time local search 202",
+        "candidate": 541
+      },
+      "memory": {
+        "resource_hours": 592.1572228537666,
+        "minutes": 1311.462227276961,
+        "saving_percent": 89.40960469004018,
+        "lower_bound": 592.1572228537666,
+        "above_lower_bound_percent": 0.0,
+        "optimality": "proven within fixed-duration phase-reclaim model",
+        "label": "time local search 202",
+        "candidate": 541
+      },
+      "gpu": {
+        "resource_hours": 173.2963030582004,
+        "minutes": 1311.8426518201827,
+        "saving_percent": 3.9330533924598843,
+        "lower_bound": 156.2280657972561,
+        "above_lower_bound_percent": 10.925205515310221,
+        "optimality": "best feasible found; not proven global minimum",
+        "label": "gpu local search 171",
+        "candidate": 750
+      },
+      "storage": {
+        "resource_hours": 180.15410667443842,
+        "minutes": 1313.4179745872816,
+        "saving_percent": 90.84593283144433,
+        "lower_bound": 104.408624875288,
+        "above_lower_bound_percent": 72.54715009380253,
+        "optimality": "best feasible found; not proven global minimum",
+        "label": "partial simultaneous task-group starts 155, fraction 0",
+        "candidate": 1214
+      }
+    },
+    "best_time": {
+      "minutes": 1311.462227276961,
+      "cpu": 148.03930571344165,
+      "memory": 592.1572228537666,
+      "gpu": 174.78546940485637,
+      "storage": 359.0913621290139
+    },
+    "additional_search_seed": 20261021
+  }
+}

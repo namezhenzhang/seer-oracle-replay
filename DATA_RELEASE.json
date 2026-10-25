@@ -1,0 +1,11 @@
+{
+  "state": "COMPACT_UPLOADED_AND_FULL_READBACK_VERIFIED",
+  "repo": "namezz/seer-agent-traces",
+  "revision": "5dc4fd305e8e359c8f3de844c906034f25ecca87",
+  "private": false,
+  "files": 2038,
+  "bytes": 10951858,
+  "raw_available": false,
+  "raw_archives_staged": 2267,
+  "raw_bytes": 10340453230
+}
