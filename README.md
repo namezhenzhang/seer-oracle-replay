@@ -10,8 +10,7 @@ Python 3.10 or newer; CPU only. No CUDA, Docker, Slurm, model download, or new i
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e .
-# Authenticate with your own HF account if the dataset is private:
-hf auth login
+# Public dataset; no HF login is required.
 # Replace COMMIT with the full revision in DATA_RELEASE.json:
 seer-download --revision COMMIT --dest data
 seer-replay reproduce --data-dir data/replay --output-dir runs/reproduction
@@ -20,7 +19,7 @@ python tests/check_reproduction.py runs/reproduction
 
 The replay writes `RESULT.json`, independently checked schedules and `VALIDATION.json`, two workload-specific PNG/PDF/SVG plots, and `joint_schedules.csv`. **The same color within a plot means the same complete schedule.** The reproduction test compares all 28 published resource/time/bound/reduction values.
 
-To examine full model/tool logs, add `--with-raw` to the download command. The compact layer is approximately 11 MB; the original compressed teacher archives are approximately 10.34 GB. See `docs/DATA.md` for contents and exclusions.
+To examine full model/tool logs, add `--with-raw` to the download command. The compact layer is 3.79 MiB compressed (approximately 11 MB unpacked); the original compressed teacher archives are approximately 10.34 GB. See `docs/DATA.md` for contents and exclusions.
 
 ## What was evaluated?
 

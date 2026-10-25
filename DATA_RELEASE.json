@@ -1,11 +1,16 @@
 {
-  "state": "COMPACT_UPLOADED_AND_FULL_READBACK_VERIFIED",
   "repo": "namezz/seer-agent-traces",
-  "revision": "5dc4fd305e8e359c8f3de844c906034f25ecca87",
+  "revision": "fc04c5018dec39bb8a4f40069bd0e76a82775b82",
   "private": false,
-  "files": 2038,
-  "bytes": 10951858,
-  "raw_available": false,
-  "raw_archives_staged": 2267,
-  "raw_bytes": 10340453230
+  "raw_available": true,
+  "raw_archives": 2267,
+  "raw_bytes": 10340453230,
+  "compact_bundle": {
+    "path": "compact/replay-data.tar.gz",
+    "bytes": 3978850,
+    "sha256": "f5c36137a0fa333fded59d1eca0b5e26adb8ef07d699a92e889b766112a57c26",
+    "uncompressed_bytes": 11925631,
+    "members": 2041,
+    "raw_available": true
+  }
 }
